@@ -13,10 +13,10 @@ keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 
 -- Window Manager Stuff (VIM-Specific)
 -- Window Spawning and Closing
-keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split Window Vertically" })
-keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split Window Horizontally" })
-keymap.set("n", "<leader>se", "<C-w>=", { desc = "Equalize Split Size" })
-keymap.set("n", "<leader>sc", "<cmd>close<CR>", { desc = "Close the Current Split Window" })
+keymap.set("n", "<leader>wv", "<C-w>v", { desc = "Split Window Vertically" })
+keymap.set("n", "<leader>wh", "<C-w>s", { desc = "Split Window Horizontally" })
+keymap.set("n", "<leader>we", "<C-w>=", { desc = "Equalize Split Size" })
+keymap.set("n", "<leader>wk", "<cmd>close<CR>", { desc = "Close the Current Split Window" })
 
 -- Window Navigation (TBD)
 
