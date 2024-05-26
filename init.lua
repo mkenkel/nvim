@@ -1,1 +1,2 @@
-require("mkenkel.core") -- Responsible for loading the new options
+require("mkenkel.core") -- Responsible for loading Core first
+require("mkenkel.lazy") -- THEN we load Lazy
