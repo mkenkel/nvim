@@ -4,7 +4,7 @@ local keymap = vim.keymap
 
 -- keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" }) -- This keymap will only work in insert mode
 
-keymap.set("n", "<leader>ed", ":Explore<CR>", { desc = "Escape to directory overview" })  -- This keymap works whenever
+-- keymap.set("n", "<leader>ed", ":Explore<CR>", { desc = "Escape to directory overview" })  -- This keymap works whenever
 keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search highlights" })  -- This keymap works whenever
 
 -- Number control
