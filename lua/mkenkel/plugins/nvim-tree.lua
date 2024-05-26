@@ -9,7 +9,7 @@ return {
     -- optionally enable 24-bit colour
     vim.opt.termguicolors = true
 
-    -- ORssetup with some options
+    -- For all options, use ':h nvim-tree'
     require("nvim-tree").setup({
       actions = {
         open_file = {
