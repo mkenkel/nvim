@@ -6,7 +6,7 @@ local keymap = vim.keymap
 -- keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" }) -- This keymap will only work in insert mode
 
 -- Normal Mode Hotkeys
-keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search highlights" })  -- This keymap works whenever
+keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search highlights" }) -- This keymap works whenever
 
 -- Number control
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" })
@@ -27,3 +27,6 @@ keymap.set("n", "<leader>tk", "<cmd>tabclose<CR>", { desc = "Kill Tab" })
 keymap.set("n", "<leader>t.", "<cmd>tabn<CR>", { desc = "Cycle to next tab" })
 keymap.set("n", "<leader>t,", "<cmd>tabp<CR>", { desc = "Cycle to previous tab" })
 keymap.set("n", "<leader>tnb", "<cmd>tabnew %<CR>", { desc = "Send current buffer to new tab" })
+
+keymap.set("n", "<leader>af", "<cmd>!ansible-lint --fix %<CR>",
+  { desc = "Runs ansible-lint against the file", noremap = true, silent = true })

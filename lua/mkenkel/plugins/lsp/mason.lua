@@ -1,7 +1,8 @@
 return {
   "williamboman/mason.nvim",
   dependencies = {
-    "williamboman/mason-lspconfig.nvim"
+    "williamboman/mason-lspconfig.nvim",
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
   },
 
   config = function()
@@ -10,6 +11,8 @@ return {
 
     -- Import mason-lspconfig
     local mason_lspconfig = require("mason-lspconfig")
+
+    local mason_tool_installer = require("mason-tool-installer")
 
     -- Enable Mason and configure the icons.
     mason.setup({
@@ -32,6 +35,15 @@ return {
         "lua_ls",
         "terraformls",
       },
+    })
+
+    mason_tool_installer.setup({
+      ensure_installed = {
+        "prettier",
+        "yamlfmt",
+        "isort",
+        "black",
+      }
     })
   end,
 }

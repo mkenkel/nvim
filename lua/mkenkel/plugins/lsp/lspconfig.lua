@@ -4,7 +4,7 @@ return {
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     { "antosha417/nvim-lsp-file-operations", config = true },
-    { "folke/neodev.nvim", opts = {} },
+    { "folke/neodev.nvim",                   opts = {} },
   },
 
   config = function()
@@ -86,7 +86,7 @@ return {
           capabilities = capabilities,
         })
       end,
-      ["ansiblels"] = function ()
+      ["ansiblels"] = function()
         lspconfig["ansiblels"].setup({
           cmd = { 'ansible-language-server', '--stdio' },
           settings = {
@@ -96,7 +96,7 @@ return {
               executionEnvironment = { enabled = false },
               validation = {
                 enabled = true,
-                lint = { enabled = true, path = 'ansible-lint'},
+                lint = { enabled = true, path = 'ansible-lint' },
               },
             },
           },
