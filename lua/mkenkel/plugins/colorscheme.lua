@@ -11,10 +11,10 @@ return {
     hl_styles = {
       floats = "default",
       sidebars = "default",
-    }
+    },
   })
 
   vim.cmd("colorscheme monokai-nightasty")
 
-  end
+  end,
 }
