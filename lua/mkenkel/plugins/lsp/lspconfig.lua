@@ -100,7 +100,8 @@ return {
               },
             },
           },
-          filetypes = { 'yml', 'yaml', 'yaml.ansible' },
+          filetypes = { 'yaml', 'yml', 'ansible' },
+          root_dir = lspconfig.util.root_pattern("roles", "playbooks"),
           single_file_support = false,
         })
       end,
