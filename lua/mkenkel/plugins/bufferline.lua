@@ -1,12 +1,11 @@
 return {
   'akinsho/bufferline.nvim',
-  tag = "latest",
-  requires = 'nvim-tree/nvim-web-devicons',
+  version = "*", 
+  dependencies = 'nvim-tree/nvim-web-devicons',
 
-  config = function()
-    vim.opt.termguicolors = true
-    require("bufferline").setup{
-
-    }
-  end,
+  opts = {
+    options = {
+      mode = "tabs",
+    },
+  },
 }

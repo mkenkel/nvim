@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("mkenkel.plugins", {
-
   change_detection = {
     notify = false, --Tells Lazy to stop asking about the changed files.
   },
