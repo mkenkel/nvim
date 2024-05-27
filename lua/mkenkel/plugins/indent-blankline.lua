@@ -6,5 +6,5 @@ return {
     indent = {
       char = "┋"
     },
-  } 
+  }
 }

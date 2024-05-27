@@ -17,14 +17,14 @@ opt.wrap = false
 
 -- Search settings
 opt.ignorecase = true -- ignore mixed case when searching
-opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
+opt.smartcase = true  -- if you include mixed case in your search, assumes you want case-sensitive
 
 opt.cursorline = true
 
 -- Appearance
 opt.termguicolors = true
 opt.background = "dark" -- prefer dark backgrounds in color schemes if light/dark are both present.
-opt.signcolumn = "yes" -- Signs on the left of the editor
+opt.signcolumn = "yes"  -- Signs on the left of the editor
 
 -- Backspace
 opt.backspace = "indent,eol,start" -- Allows backspace on indent, EOL or insert mode start position.

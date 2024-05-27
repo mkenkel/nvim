@@ -10,11 +10,11 @@ return {
 
     -- configure autopairs
     autopairs.setup({
-      check_ts = true, -- Check treesitter
+      check_ts = true,                      -- Check treesitter
       ts_config = {
-        lua = { "string" }, -- Don't add pairs in lua string treesitter nodes
+        lua = { "string" },                 -- Don't add pairs in lua string treesitter nodes
         javascript = { "template_string" }, -- Dont add pairs in javascript template_string treesitter nodes
-        java = false, -- Don't check treesitter when in java.
+        java = false,                       -- Don't check treesitter when in java.
       },
     })
 
@@ -23,7 +23,7 @@ return {
 
     -- Import nvim-cmp plugin (Completions plugin)
     local cmp = require("cmp")
-    
+
     -- Make autopairs and completion work together
     cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
   end,
