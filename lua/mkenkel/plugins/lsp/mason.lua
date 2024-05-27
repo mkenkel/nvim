@@ -43,6 +43,10 @@ return {
         "yamlfmt",
         "isort",
         "black",
+        -- Linters below
+        "ansible-lint",
+        "pylint",
+        "yamllint",
       }
     })
   end,

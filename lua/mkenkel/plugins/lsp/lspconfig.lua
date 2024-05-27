@@ -95,7 +95,7 @@ return {
               ansible = { path = 'ansible' },
               executionEnvironment = { enabled = false },
               validation = {
-                enabled = true,
+                enabled = false,
                 lint = { enabled = true, path = 'ansible-lint' },
               },
             },
