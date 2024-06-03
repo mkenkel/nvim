@@ -17,9 +17,17 @@
 --     vim.cmd("colorscheme monokai-nightasty")
 --   end,
 -- }
+-- return {
+--   "sainnhe/sonokai",
+--   config = function()
+--     vim.cmd("colorscheme sonokai")
+--   end,
+-- }
 return {
-  "sainnhe/sonokai",
+  "scottmckendry/cyberdream.nvim",
+  lazy = false,
+  priority = 1000,
   config = function()
-    vim.cmd("colorscheme sonokai")
+    vim.cmd("colorscheme cyberdream")
   end,
 }
