@@ -33,3 +33,4 @@ keymap.set("n", "<leader>af", "<cmd>!ansible-lint --fix %<CR>",
 
 -- Personal timesavers
 keymap.set("n", "<leader>wq", "<cmd>wq! <CR>", { desc = "Write and quit the file." })
+keymap.set("n", "<leader>qq", "<cmd>q! <CR>", { desc = "Quick quit (No save)" })
