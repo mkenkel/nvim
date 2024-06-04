@@ -30,3 +30,6 @@ keymap.set("n", "<leader>tnb", "<cmd>tabnew %<CR>", { desc = "Send current buffe
 
 keymap.set("n", "<leader>af", "<cmd>!ansible-lint --fix %<CR>",
   { desc = "Runs ansible-lint against the file", noremap = true, silent = true })
+
+-- Personal timesavers
+keymap.set("n", "<leader>wq", "<cmd>wq! <CR>", { desc = "Write and quit the file." })
